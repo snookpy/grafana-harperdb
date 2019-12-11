@@ -1,40 +1,28 @@
 {
-  "name": "HarperDB",
-  "id": "grafana-harperdb",
   "type": "datasource",
-
-  "partials": {
-    "config": "public/app/plugins/datasource/simplejson/partials/config.html"
-  },
+  "name": "HarperDB",
+  "id": "grafana-harperdb-datasource",
 
   "metrics": true,
-  "annotations": true,
+  "logs": false,
+  "alerting": false,
+  "annotations": false,
 
   "info": {
-    "description": "simple json datasource",
+    "description": "Harperdb rescription",
     "author": {
-      "name": "Grafana Labs",
-      "url": "https://grafana.com"
+      "name": "Nook",
+      "url": "harperdb.io"
     },
-    "logos": {
-      "small": "img/simpleJson_logo.svg",
-      "large": "img/simpleJson_logo.svg"
-    },
-    "links": [{
-        "name": "GitHub",
-        "url": "https://github.com/grafana/simple-json-datasource"
-      },
-      {
-        "name": "MIT License",
-        "url": "https://github.com/grafana/simple-json-datasource/blob/master/LICENSE"
-      }
-    ],
-    "version": "1.4.0",
-    "updated": "2018-06-20"
+    "keywords": [ ],
+    "logos": { },
+    "links": [ ],
+    "screenshots": [ ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
   },
-
   "dependencies": {
-    "grafanaVersion": "3.x.x",
-    "plugins": []
+    "grafanaVersion": "6.3.3+",
+    "plugins": [ ]
   }
 }
