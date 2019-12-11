@@ -76,12 +76,11 @@ export class TemplateDatasource extends DataSourceApi<TemplateQuery> {
       responseSentBack = results[0]
     }
 
-    console.log("someItemError someItemError someItemError", responseSentBack)
     /// format grafana's responses
     responseSentBack.data = results.filter(f => f.status === 200).reduce((arr, r) => {
         return [...arr, r.data]
     }, [])
-    console.log("results results results:", responseSentBack)
+
     return responseSentBack
   }
 

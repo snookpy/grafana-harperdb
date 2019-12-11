@@ -6,10 +6,6 @@ import { DataSourceHttpSettings } from '@grafana/ui';
 
 type Props = DataSourcePluginOptionsEditorProps<any>;
 
-/**
- * Empty Config Editor -- settings to save
- */
-
  interface states {
   defaultUrl: string;
  }
@@ -20,7 +16,6 @@ export class ConfigEditor extends PureComponent<Props, states> {
     defaultUrl: "http://localhost:9920"
   }
   render() {
-    console.log(this.props)
     return (<div>
       <DataSourceHttpSettings
         defaultUrl={this.state.defaultUrl}
