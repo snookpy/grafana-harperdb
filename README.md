@@ -4,11 +4,11 @@
 1. Click add datasource
 2. Select `HarperDB` plugin 
 3. On settings 
-   - Input URL with harperdb host
+   - Input `URL` with harperdb host
 
-   - select accress with browser for now
+   - select `Access` with browser for now
 
-   - Turn on Basic Auth and input username/password of HarperDB
+   - Turn on `Basic Auth` and input username/password of HarperDB
 
     ![image](./setting-example.png)
 4. On Dashboard, we can use sql query from HarperDB
