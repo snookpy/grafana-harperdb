@@ -13,13 +13,13 @@
     ![image](./setting-example.png)
 4. On Dashboard, we can use sql query from HarperDB
  
-    **FOR NOW** support only has two columns from SQL result
+    **FOR NOW** support only two columns from SQL result that we need to change column name to
     `time` and `metric`
     which
         
-    `time` is timestamp only
-    
-    `metric` is number
+    `time` is timestamp type only
+
+    `metric` is number type
 
     Example: 
     ```sql
