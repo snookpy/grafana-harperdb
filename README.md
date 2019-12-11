@@ -18,6 +18,7 @@
     which
         
     `time` is timestamp only
+    
     `metric` is number
 
     Example: 
