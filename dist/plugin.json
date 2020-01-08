@@ -1,0 +1,28 @@
+{
+  "type": "datasource",
+  "name": "HarperDB",
+  "id": "grafana-harperdb-datasource",
+
+  "metrics": true,
+  "logs": false,
+  "alerting": false,
+  "annotations": false,
+
+  "info": {
+    "description": "Harperdb rescription",
+    "author": {
+      "name": "Nook",
+      "url": "harperdb.io"
+    },
+    "keywords": [ ],
+    "logos": { },
+    "links": [ ],
+    "screenshots": [ ],
+    "version": "1.0.0",
+    "updated": "2019.12.12"
+  },
+  "dependencies": {
+    "grafanaVersion": "6.3.3+",
+    "plugins": [ ]
+  }
+}
