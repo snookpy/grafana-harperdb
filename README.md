@@ -1,6 +1,11 @@
 # Grafana HarperDB Datasource
 
-## How to
+## Install This Plugin
+```sh
+grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/master.zip plugins install grafana-harperdb-datasource
+```
+
+## How to use
 1. Click add datasource
 2. Select `HarperDB` plugin 
 3. On settings 
