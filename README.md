@@ -1,5 +1,5 @@
 # Grafana HarperDB Datasource
-
+    Harperdb datasource plugin for Grafana, implemented by React.js
 ## Install This Plugin
 ```sh
 grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/master.zip plugins install grafana-harperdb-datasource
@@ -7,7 +7,7 @@ grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/mast
 
 ## How to use
 1. Click add datasource
-2. Select `HarperDB` plugin 
+2. Select `HarperDB` plugin
 3. On settings 
    - Input `URL` with harperdb host
 
@@ -16,11 +16,7 @@ grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/mast
    - Turn on `Basic Auth` and input username/password of HarperDB
 
     ![image](./setting-example.png)
-4. On Dashboard, we can use sql query from HarperDB
- 
-    **FOR NOW** support only two columns from SQL result that we need to change column name to
-    `time` and `metric`
-    which
+4. On Dashboard, we can use sql query from HarperDB and select two fields
         
     `time` is timestamp type only
 
@@ -28,7 +24,7 @@ grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/mast
 
     Example: 
     ```sql
-    SELECT sell_time as time, sum(price) as metric FROM dev.sell_dog GROUP BY sell_time
+    SELECT sell_time, sum(price) FROM dev.sell_dog GROUP BY sell_time
     ```
     ![image](./dashboard-example.png)
 
