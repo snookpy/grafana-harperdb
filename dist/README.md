@@ -40,3 +40,15 @@ grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/mast
  with `username: admin
  ` and 
  `password: admin`
+
+## Install Plugins via MacOS
+1. run grafana cli
+```
+    grafana-cli --pluginUrl https://github.com/nuenook/grafana-harperdb/archive/master.zip plugins install grafana-harperdb-datasource
+``` 
+plugin stored in /usr/local/var/lib/grafana/plugins
+
+2. restart grafana service
+```
+brew services restart grafana
+```
